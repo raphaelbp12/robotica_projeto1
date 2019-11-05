@@ -279,9 +279,20 @@ A figura \ref{fig:ex4_configuracoes} exibe as três configurações usadas prese
 
 \section*{Questão 5}
 
-Para se fazer a Cinemática Inversa é necessário escolher uma posição final do manipulador, e uma configuração inicial do manipulador. A posição zero no manipulador é uma região de singularidade. Portanto, para que a função \textit{ikine()} convirja, é necessário mudar a configuração inicial. 
+Para se fazer a Cinemática Inversa é necessário escolher uma posição $p_{be} $ e uma orientação $R_{Be}$ finais do manipulador, e uma configuração inicial do manipulador. A posição zero no manipulador é uma região de singularidade. Portanto, para que a função \textit{ikine()} convirja, é necessário mudar a configuração inicial. 
 
 A tabela \ref{tab:ex5_ikine_configuracao} exibe os ângulos das juntas escolhidos e os encontrados. A figura \ref{fig:ex5_configuracoes} mostra o manipulador com as duas configurações.
+
+
+\begin{gather}
+\label{eq:ex5_tbe}
+T_{be} = \begin{bmatrix} R_{be} & p_{be} \\ 0 & 1 \end{bmatrix}
+\\ 
+\label{eq:ex5_rbe}
+R_{be} = \begin{bmatrix} 0 & 0 & 1 \\ 0 & -1 & 0 \\ 1 & 0 & 0 \end{bmatrix}
+\qquad
+p_{be} = \begin{bmatrix} 0.7 \\ 0 \\ 0.4 \end{bmatrix}
+\end{gather}
 
 \begin{table}[!ht]
 \centering
@@ -317,6 +328,29 @@ Resultante     & 1.1630 & -0.8868 & 0.8339 & -1.4722 & 0.2492 & 0.7224 & 0.7613 
 
 
 \section*{Questão 6}
+
+\begin{gather*}
+J_7 = \begin{bmatrix} 
+\vec{h}_1 \times \vec{p}_{17} & \vec{h}_2 \times \vec{p}_{27} & \vec{h}_3 \times \vec{p}_{37} & \vec{h}_4 \times \vec{p}_{47} & \vec{h}_5 \times \vec{p}_{57} & \vec{h}_6 \times \vec{p}_{67} & \vec{h}_7 \times \vec{p}_{77} \\
+\vec{h}_1 & \vec{h}_2 & \vec{h}_3 & \vec{h}_4 & \vec{h}_5 & \vec{h}_6 & \vec{h}_7 \end{bmatrix}
+\end{gather*}
+
+\begin{equation*}
+\begin{aligned}
+(J_7)_0 &= 
+\left[\begin{matrix} 
+(\vec{h}_1)_0 \times (\vec{p}_{17})_0 & (\vec{h}_2)_0 \times (\vec{p}_{27})_0 & (\vec{h}_3)_0 \times (\vec{p}_{37})_0 & (\vec{h}_4)_0 \times (\vec{p}_{47})_0 \\
+(\vec{h}_1)_0 & (\vec{h}_2)_0 & (\vec{h}_3)_0 & (\vec{h}_4)_0
+\end{matrix}\right. \\
+&\qquad\qquad
+\left.\begin{matrix}
+(\vec{h}_5)_0 \times (\vec{p}_{57})_0 & (\vec{h}_6)_0 \times (\vec{p}_{67})_0 & (\vec{h}_7)_0 \times (\vec{p}_{77})_0 \\
+(\vec{h}_5)_0 & (\vec{h}_6)_0 & (\vec{h}_7)_0
+\end{matrix}\right]
+\end{aligned}
+\end{equation*}
+
+
 \section*{Questão 7}
 
 \end{document}
