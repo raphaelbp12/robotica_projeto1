@@ -279,6 +279,41 @@ A figura \ref{fig:ex4_configuracoes} exibe as três configurações usadas prese
 
 \section*{Questão 5}
 
+Para se fazer a Cinemática Inversa é necessário escolher uma posição final do manipulador, e uma configuração inicial do manipulador. A posição zero no manipulador é uma região de singularidade. Portanto, para que a função \textit{ikine()} convirja, é necessário mudar a configuração inicial. 
+
+A tabela \ref{tab:ex5_ikine_configuracao} exibe os ângulos das juntas escolhidos e os encontrados. A figura \ref{fig:ex5_configuracoes} mostra o manipulador com as duas configurações.
+
+\begin{table}[!ht]
+\centering
+\caption{Configuração inicial para a função ikine.}
+\label{tab:ex5_ikine_configuracao}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+Juntas  & $\theta_1$ & $\theta_2$ & $\theta_3$ & $\theta_4$ & $\theta_5$ & $\theta_6$ & $\theta_7$ \\ \hline
+Inicial     & 0 & $-\pi /2$ & 0 & 0 & 0 & 0 & 0 \\ \hline
+Resultante     & 1.1630 & -0.8868 & 0.8339 & -1.4722 & 0.2492 & 0.7224 & 0.7613 \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{figure}[!ht]
+\centering
+  \begin{minipage}{\linewidth}
+  \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=1\textwidth]{figs/ex5_inicial.pdf}
+    \caption{Inicial}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=1\textwidth]{figs/ex5_resposta.pdf}
+    \caption{Resultante}
+    \end{subfigure}
+  \end{minipage}
+\caption{Representações do manipulador nas configurações inicial e na resultante. (tabela \ref{tab:ex5_ikine_configuracao})}
+\label{fig:ex5_configuracoes}
+\end{figure}
+
 
 
 \section*{Questão 6}
