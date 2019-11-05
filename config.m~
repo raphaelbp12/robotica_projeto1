@@ -24,4 +24,4 @@ cA = [0 0 0 0 0 0 0];
 cB = [0 -pi/2 0 0 pi/2 pi/2 0];
 cC = [0 -pi/2 0 pi/2 0 0 0];
 cD = [pi/2 -pi/2 0 0 0 0 0];
-cE = deg2rad([90 -120 0 80 0 -45 0]);
+cE = deg2rad[pi/2 -pi/2 0 0 pi/2 pi/2 -pi/2];
