@@ -215,11 +215,69 @@ $\theta_7$ & $0$ & $0$ & $0$ \\ \hline
 
 \section*{Questão 2}
 
+A figura \ref{fig:kgen3_representacao_dh} mostra a representação do Manipulador pelo método de Denavit-Hartenberg Standard. A tabela \ref{tab:ex2_param_tabela_dh} exibe os parâmetros encontrados para o método.
+
+\begin{figure}[!ht]
+\centering
+\caption{Representação do Denavit-Hartenberg Standard do Manipulador Kinova Gen3.}
+\includegraphics[scale=1]{figs/ex2_dh}
+\label{fig:kgen3_representacao_dh}
+\end{figure}
+
+
+\begin{table}[!ht]
+\centering
+\caption{Tabela Denavit Hartenberg Standard para o Manipulador}
+\label{tab:ex2_param_tabela_dh}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{Elo i} & \textbf{$\theta_i$} & \textbf{$d_i$} & \textbf{$a_i$} & \textbf{$\alpha_i$} & \textbf{type} & \textbf{offset} \\ \hline
+1                & $\theta_1$            & $l_{0} + l_{1z}$     & $0$         & $\pi/2$               & $0$             & $-\pi/2$           \\ \hline
+2                & $\theta_2$            & $l_{2x} + l_{3x}$    & $0$         & $-\pi/2$              & $0$             & $0$           \\ \hline
+3                & $\theta_3$            & $l_{2z} + l_{3z}$    & $0$         & $\pi/2$               & $0$             & $0$               \\ \hline
+4                & $\theta_4$            & $l_{3x} + l_{4x}$    & $0$         & $-\pi/2$              & $0$             & $0$               \\ \hline
+5                & $\theta_5$            & $l_{4z} + l_{5}$     & $0$         & $\pi/2$               & $0$             & $0$               \\ \hline
+6                & $\theta_6$            & $0$                  & $0$         & $-\pi/2$              & $0$             & $0$           \\ \hline
+7                & $\theta_7$            & $l_6+l_7$            & $0$         & $0$                   & $0$             & $\pi/2$           \\ \hline
+\end{tabular}
+\end{table}
+
 
 
 \section*{Questão 3}
 
+O item $a$ da figura \ref{fig:ex4_configuracoes} exibe o modelo gerado pela classe SerialLink do Robot Toolbox. O manipulador se encontra na posição zero.
+
 \section*{Questão 4}
+
+
+
+\begin{figure}[!ht]
+\centering
+  \begin{minipage}{\linewidth}
+  \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=1\textwidth]{figs/ex4_a.pdf}
+    \caption{Configuração A}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=1\textwidth]{figs/ex4_b.pdf}
+    \caption{Configuração B}
+    \end{subfigure}
+  \end{minipage}
+  \begin{minipage}{\linewidth}
+  \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=1\textwidth]{figs/ex4_c.pdf}
+    \caption{Configuração C}
+    \end{subfigure}
+  \end{minipage}
+\caption{Representação do manipulador no Denavit Hartenberg Standard nas configurações A, B e C (tabela \ref{tab:ex1_configuracoes})}
+\label{fig:ex4_configuracoes}
+\end{figure}
+
+
+
 \section*{Questão 5}
 \section*{Questão 6}
 \section*{Questão 7}
